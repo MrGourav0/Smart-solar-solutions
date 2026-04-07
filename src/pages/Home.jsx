@@ -7,6 +7,7 @@ import Footer from "../components/Footer"
 import Booking from "../components/Booking"
 
 
+
 function Home() {
   return (
     <div className="bg-white">
