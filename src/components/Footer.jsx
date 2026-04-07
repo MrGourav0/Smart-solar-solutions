@@ -6,7 +6,7 @@ function Footer() {
 
         {/* Company Info */}
         <div>
-          <h2 className="text-2xl font-bold mb-4 text-green-400">
+          <h2 className="text-2xl font-bold mb-4 text-white hover:text-green-400">
             Smart solar solutions
           </h2>
 
@@ -52,9 +52,9 @@ function Footer() {
           </h3>
 
           <ul className="space-y-2 text-gray-400 text-sm">
-            <li>📍 Madhya Pradesh, Indore</li>
-            <li>📞 +91 6268314390</li>
-            <li>✉️ sssindorecare.com</li>
+            <li><i className="ri-map-pin-line"></i> Madhya Pradesh, Indore</li>
+            <li><i className="ri-phone-line"></i> +91 6268314390</li>
+            <li><i className="ri-mail-line"></i> sssindorecare.com</li>
           </ul>
         </div>
 

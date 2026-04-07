@@ -29,7 +29,7 @@ function Contact() {
                 Address
               </h3>
               <p className="text-gray-600">
-                Madhya Pradesh, India
+                Indore, India
               </p>
             </div>
 
@@ -38,7 +38,7 @@ function Contact() {
                 Phone
               </h3>
               <p className="text-gray-600">
-                +91 98765 43210
+                +91 6268314390
               </p>
             </div>
 
@@ -47,7 +47,7 @@ function Contact() {
                 Email
               </h3>
               <p className="text-gray-600">
-                support@solarclean.com
+               sssindorecare.com
               </p>
             </div>
 

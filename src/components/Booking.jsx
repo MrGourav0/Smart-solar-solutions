@@ -3,7 +3,7 @@ import React from "react";
 const plans = [
   {
     name: "3 Months Plan",
-    price: "₹999",
+    price: "₹600",
     features: [
       "1 Cleaning per Month",
       "Basic Panel Inspection",
@@ -14,7 +14,7 @@ const plans = [
   },
   {
     name: "6 Months Plan",
-    price: "₹1799",
+    price: "₹1000",
     features: [
       "1 Cleaning per Month",
       "Complete Panel Inspection",
@@ -25,7 +25,7 @@ const plans = [
   },
   {
     name: "12 Months Plan",
-    price: "₹2999",
+    price: "₹1900",
     features: [
       "1 Cleaning per Month",
       "Full Solar Maintenance",
@@ -43,7 +43,7 @@ function Booking() {
         
         {/* Heading */}
         <div className="text-center mb-14">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl font-bold text-green-600 mb-4">
             Choose Your Cleaning Plan
           </h2>
 
@@ -61,7 +61,7 @@ function Booking() {
               className={`p-8 rounded-xl shadow-md transition hover:shadow-xl ${
                 plan.highlight
                   ? "bg-green-500 text-white"
-                  : "bg-white"
+                  : "bg-white text-gray-600"
               }`}
             >
               <h3 className="text-2xl font-bold mb-3">{plan.name}</h3>

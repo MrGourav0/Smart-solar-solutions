@@ -22,11 +22,11 @@ const Navbar = () => {
     isOpen
       ? "bg-black/40 backdrop-blur-sm w-full left-0 top-0 py-3 rounded-none"
       : scrolled
-      ? "bg-black/40 backdrop-blur-sm shadow-lg w-[92%] left-1/2 -translate-x-1/2 top-2 py-2 rounded-full"
-      : "bg-transparent w-full left-0 top-0 py-5 rounded-none"
+      ? "bg-black/40 backdrop-blur-sm shadow-lg w-[92%] left-1/2 -translate-x-1/2 top-1 py-0 rounded-full"
+      : "bg-transparent w-full left-0 top-0 py-0 rounded-none"
   }`}
 >
-     <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:px-6 md:py-5 transition-all duration-500">
+     <div className="max-w-7xl mx-auto flex items-center justify-between px-2 py-2 md:px-6 md:py-2 transition-all duration-500">
  
        {/* Logo */}
 <a href="#home" className="flex items-center gap-2 mb-0">
@@ -35,7 +35,7 @@ const Navbar = () => {
     alt="Smart Solar Solutions"
     className="h-8 md:h-12 w-auto"
   />
-  <span className="text-sm md:text-md font-bold text-white">
+  <span className="text-sm md:text-md font-bold text-white hover:text-green-400">
     Smart Solar Solutions
     
   </span>
@@ -60,7 +60,7 @@ const Navbar = () => {
         {/* Contact Button */}
        <Link
 to="/contact"
-className="bg-green-500 hover:bg-green-600 text-white text-sm md:text-lg px-5 py-2 rounded-full transition"
+className="bg-green-500 hover:bg-green-600 text-white text-sm md:text-sm px-5 py-2 rounded-full transition"
 >
 Contact Us
 </Link>

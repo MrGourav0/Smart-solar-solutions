@@ -33,7 +33,7 @@ function Services() {
 
         {/* Section Title */}
         <div className="text-center mb-14">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl font-bold text-green-600 mb-4">
             Our Solar Cleaning Services
           </h2>
 
