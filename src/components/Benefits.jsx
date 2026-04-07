@@ -16,7 +16,7 @@ function Benefits() {
 
       <div className="bg-gray-200 p-10 rounded-2xl ">
         <h2 className="text-3xl text-green-600 font-semibold mb-6">
-          Maximize Your Solar Performance
+          {/* Maximize Your Solar Performance */}
         </h2>
 
         <ul className="space-y-3 text-gray-700">

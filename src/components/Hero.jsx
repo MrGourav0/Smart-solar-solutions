@@ -4,7 +4,7 @@ function Hero() {
       id="home"
       className="w-full h-screen bg-cover bg-center flex items-center justify-center relative"
       style={{
-        backgroundImage: "url('/Hero.jpg')"
+        backgroundImage: "url('/solar.jpg')"
       }}
     >
 
