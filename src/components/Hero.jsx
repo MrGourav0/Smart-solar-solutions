@@ -13,11 +13,11 @@ function Hero() {
 
       {/* content */}
       <div className="relative text-center text-white">
-        <h1 className="text-5xl md:text-7xl font-bold tracking-wide">
+        <h1 className="text-5xl md:text-7xl font-bold  tracking-wide">
           SOLAR CLEANING
         </h1>
 
-        <p className="mt-4 text-lg md:text-xl">
+        <p className="mt-4 text-lg md:text-xl font-poppins">
           Professional Solar Panel Cleaning Services
         </p>
       </div>
