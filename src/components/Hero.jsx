@@ -1,9 +1,65 @@
 import "animate.css";
 import { useState } from "react";
+import Card from './Card'
 
 function Hero() {
   const [open, setOpen] = useState(null);
   const [subOpen, setSubOpen] = useState(null);
+  const solarPlans = {
+  residential: [
+    {
+      title: "3KW / 4KW",
+      plans: [
+        { label: "One Time", price: 599 },
+        { label: "6 Month", price: 3999 },
+        { label: "1 Year", price: 7499 },
+      ],
+    },
+    {
+      title: "5KW / 6KW",
+      plans: [
+        { label: "One Time", price: 649 },
+        { label: "6 Month", price: 4299 },
+        { label: "1 Year", price: 7999 },
+      ],
+    },
+    {
+      title: "7KW / 8KW",
+      plans: [
+        { label: "One Time", price: 699 },
+        { label: "6 Month", price: 4599 },
+        { label: "1 Year", price: 8499 },
+      ],
+    },
+  ],
+  commercial:[
+     {
+      title: "10KW / 20KW",
+      plans: [
+        { label: "One Time", price: 599 },
+        { label: "6 Month", price: 3999 },
+        { label: "1 Year", price: 7499 },
+      ],
+    },
+    {
+      title: "20KW / 30KW",
+      plans: [
+        { label: "One Time", price: 649 },
+        { label: "6 Month", price: 4299 },
+        { label: "1 Year", price: 7999 },
+      ],
+    },
+    {
+      title: "30KW / 40KW",
+      plans: [
+        { label: "One Time", price: 699 },
+        { label: "6 Month", price: 4599 },
+        { label: "1 Year", price: 8499 },
+      ],
+    },
+
+  ]
+};
 
   const toggle = (menu) => {
     setOpen(open === menu ? null : menu);
@@ -31,7 +87,7 @@ function Hero() {
           {/* Solar Solutions */}
           <div>
             <h2
-              className="cursor-pointer font-bold"
+              className="cursor-pointer font-bold  "
               onClick={() => toggle("solar")}
             >
               Solar Solutions
@@ -58,54 +114,55 @@ function Hero() {
             {open === "services" && (
               <div className="mt-2 space-y-3">
 
+              
                 {/* Residential */}
-                <div className="p-3">
-                  <p
-                    className="font-bold cursor-pointer"
-                    onClick={() => toggleSub("residential")}
-                  >
-                    Residential Solar Cleaning
-                  </p>
+<div className="p-3">
+  <div
+    className="flex items-center gap-2 cursor-pointer"
+    onClick={() => toggleSub("residential")}
+  >
+    <span
+      className={`transition-transform ${
+        subOpen === "residential" ? "rotate-90" : ""
+      }`}
+    >
+      ▶
+    </span>
+    <p className="font-bold">Residential Solar Cleaning</p>
+  </div>
 
-                  {subOpen === "residential" && (
-                    <div className="mt-2 space-y-2">
+  {subOpen === "residential" && (
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-3">
+      {solarPlans.residential.map((item, index) => (
+        <Card key={index} title={item.title} plans={item.plans} />
+      ))}
+    </div>
+  )}
+</div>
+               {/* Commercial */}
+<div className="p-3">
+  <div
+    className="flex items-center gap-2 cursor-pointer"
+    onClick={() => toggleSub("commercial")}
+  >
+    <span
+      className={`transition-transform ${
+        subOpen === "commercial" ? "rotate-90" : ""
+      }`}
+    >
+      ▶
+    </span>
+    <p className="font-bold">Commercial Solar Cleaning</p>
+  </div>
 
-                      {/* 3/4 KW */}
-                      <div>
-                        <p>3KW / 4KW</p>
-                        <p>One Time - ₹599</p>
-                        <p>6 Month - ₹3999</p>
-                        <p>1 Year - ₹7499</p>
-                      </div>
-
-                      {/* 5/6 KW */}
-                      <div>
-                        <p>5KW / 6KW</p>
-                        <p>One Time - ₹649</p>
-                        <p>6 Month - ₹4299</p>
-                        <p>1 Year - ₹7999</p>
-                      </div>
-
-                      {/* 7/8 KW */}
-                      <div>
-                        <p>7KW / 8KW</p>
-                        <p>One Time - ₹699</p>
-                        <p>6 Month - ₹4599</p>
-                        <p>1 Year - ₹8499</p>
-                      </div>
-
-                    </div>
-                  )}
-                </div>
-
-                {/* Commercial */}
-                <div className="p-3">
-                  <p className="cursor-pointer font-bold" onClick={()=>toggleSub("Commercial")}>Commercial Solar Cleaning</p>
-                  {subOpen==="commercial"&&(
-                    <div>hello this is product</div>
-                  )}
-                </div>
-
+  {subOpen === "commercial" && (
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-3">
+      {solarPlans.commercial.map((item, index) => (
+        <Card key={index} title={item.title} plans={item.plans} />
+      ))}
+    </div>
+  )}
+</div>
                 {/* Other Services */}
                 <div className="p-3">
                   <p>Solar Repair & Maintenance</p>
