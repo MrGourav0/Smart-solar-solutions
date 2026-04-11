@@ -66,9 +66,9 @@ function Services() {
   };
 
   const tabs = [
-    { id: "residential", label: " Residential Cleaning", count: 3 },
-    { id: "commercial", label: " Commercial Cleaning", count: 3 },
-    { id: "other", label: " Other Services", count: 2 },
+    { id: "residential", label: " Residential Cleaning", },
+    { id: "commercial", label: " Commercial Cleaning", },
+    // { id: "other", label: " Other Services",  },
   ];
 
   const otherServices = [
@@ -183,7 +183,7 @@ function Services() {
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-20 p-12 bg-gradient-to-r from-green-500/10 to-green-600/10 rounded-3xl border-2 border-green-200/50">
+        {/* <div className="text-center mt-20 p-12 bg-gradient-to-r from-green-500/10 to-green-600/10 rounded-3xl border-2 border-green-200/50">
           <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
             Ready to Get Started?
           </h3>
@@ -193,7 +193,8 @@ function Services() {
           <button className="bg-gradient-to-r from-green-500 to-green-600 text-white px-12 py-5 text-xl font-bold rounded-3xl shadow-2xl hover:shadow-3xl hover:scale-105 transition-all duration-300">
             Book Free Assessment →
           </button>
-        </div>
+        </div> */}
+        
       </div>
     </section>
   );

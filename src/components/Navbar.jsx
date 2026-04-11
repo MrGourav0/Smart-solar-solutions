@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom"
 
-const menu = ["Home", "About", "Services", "Projects", "Contact"];
+const menu = ["Home", "About", "Services", "Projects", ];
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -26,19 +26,19 @@ const Navbar = () => {
       : "bg-transparent w-full left-0 top-0 py-0 rounded-none"
   }`}
 >
-     <div className="max-w-7xl mx-auto flex items-center justify-between px-2 py-2 md:px-6 md:py-2 transition-all duration-500">
+     <div className="max-w-7xl mx-auto flex items-center justify-between px-0 py-0 md:px-0 md:py-0 transition-all duration-500">
  
        {/* Logo */}
 <a href="#home" className="flex items-center gap-2 mb-0">
   <img
-    src="/Logo.png"
+    src="/LO.png"
     alt="Smart Solar Solutions"
-    className="h-8 md:h-12 w-auto"
+    className="h-14 md:h-15 w-auto"
   />
-  <span className="text-sm md:text-md font-bold text-white hover:text-green-400">
+  {/* <span className="text-sm md:text-md font-bold text-white hover:text-green-400">
     Smart Solar Solutions
     
-  </span>
+  </span> */}
 </a>
 
         {/* Desktop Menu */}

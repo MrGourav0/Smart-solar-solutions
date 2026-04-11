@@ -29,7 +29,7 @@ function Contact() {
                 Address
               </h3>
               <p className="text-gray-600">
-                Indore, India
+                649-650, Sector A, Mahalaxmi Nagar, Indore, Madhya Pradesh, 452010
               </p>
             </div>
 
