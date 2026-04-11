@@ -7,7 +7,7 @@ function About() {
 
       {/* Left Content */}
       <div>
-        <h2 className="text-4xl font-bold text-green-600 mb-6">
+        <h2 className="text-4xl font-bold bg-gradient-to-r from-green-800 to-green-400 bg-clip-text text-transparent mb-6">
           Professional Solar Panel Cleaning Services
         </h2>
 
