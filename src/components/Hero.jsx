@@ -46,7 +46,7 @@ function Hero() {
       </div>
 
       {/* WhatsApp Button */}
-      <div>
+      <div className="flex ">
         <a
           href="https://wa.me/6268314390?text=Hello%20I%20want%20solar%20panel%20cleaning%20service"
           target="_blank"
@@ -54,6 +54,14 @@ function Hero() {
           className="fixed bottom-5 right-5 p-2 w-12 rounded-full bg-green-400 animate__animated animate__heartBeat animate__infinite"
         >
           <i className="ri-whatsapp-line text-white text-3xl"></i>
+        </a>
+         <a
+          href="tel:6168314390"
+          target="_blank"
+          rel="noreferrer"
+          className="fixed bottom-22 right-5 p-2 w-12 rounded-full bg-blue-500 animate__animated animate__heartBeat animate__infinite"
+        >
+          <i className="ri-phone-line text-white text-3xl"></i>
         </a>
       </div>
     </section>

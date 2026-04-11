@@ -10,27 +10,27 @@ function Services() {
         title: "3KW / 4KW Residential",
         subtitle: "Perfect for homes",
         plans: [
-          { label: "One Time Cleaning", price: 599 },
-          { label: "6 Months Plan", price: 3999 },
-          { label: "1 Year Unlimited", price: 7499 },
+          { label: "1 Time Process", price: 599 },
+          { label: "6 Months Subscription", price: 3999 },
+          { label: "1 Year Subscription", price: 7499 },
         ],
       },
       {
         title: "5KW / 6KW Residential",
         subtitle: "Medium households",
         plans: [
-          { label: "One Time Cleaning", price: 649 },
-          { label: "6 Months Plan", price: 4299 },
-          { label: "1 Year Unlimited", price: 7999 },
+          { label: "1 Time Process", price: 649 },
+          { label: "6 Months Subscription", price: 4299 },
+          { label: "1 Year Subscription", price: 7999 },
         ],
       },
       {
         title: "7KW+ Large Residential",
         subtitle: "Big homes & villas",
         plans: [
-          { label: "One Time Cleaning", price: 699 },
-          { label: "6 Months Plan", price: 4599 },
-          { label: "1 Year Unlimited", price: 8499 },
+          { label: "1 Time Process", price: 699 },
+          { label: "6 Months Subscription", price: 4599 },
+          { label: "1 Year Subscription", price: 8499 },
         ],
       },
     ],
@@ -39,27 +39,27 @@ function Services() {
         title: "10-20KW Commercial",
         subtitle: "Small businesses",
         plans: [
-          { label: "One Time", price: 599 },
-          { label: "6 Months", price: 3999 },
-          { label: "Annual Contract", price: 7499 },
+          { label: "1 Time Process", price: 599 },
+          { label: "6 Months Subscription", price: 3999 },
+          { label: "1 Year Subscription", price: 7499 },
         ],
       },
       {
         title: "20-30KW Commercial",
         subtitle: "Medium factories",
         plans: [
-          { label: "One Time", price: 649 },
-          { label: "6 Months", price: 4299 },
-          { label: "Annual Contract", price: 7999 },
+          { label: "1 Time Process", price: 649 },
+          { label: "6 Months Subscription", price: 4299 },
+          { label: "1 Year Subscription", price: 7999 },
         ],
       },
       {
         title: "30KW+ Industrial",
         subtitle: "Large plants",
         plans: [
-          { label: "One Time", price: 699 },
-          { label: "6 Months", price: 4599 },
-          { label: "Annual Contract", price: 8499 },
+          { label: "1 Time Process", price: 699 },
+          { label: "6 Months Subscription", price: 4599 },
+          { label: "1 Year Subscription", price: 8499 },
         ],
       },
     ],
@@ -174,7 +174,7 @@ function Services() {
                   </div>
 
                   <button className="w-full bg-green-500 text-white py-4 px-6 rounded-2xl font-semibold hover:from-green-600 hover:to-green-700 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                    Get Quote
+                    Get Now
                   </button>
                 </div>
               ))}
