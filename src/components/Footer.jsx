@@ -62,12 +62,11 @@ function Footer() {
             <li className="hover:text-green-500">
               <i className="ri-map-pin-line"></i>{" "}
               <a
-                href="https://www.google.com/maps?q=649-650,+Sector+A,+Mahalaxmi+Nagar,+Indore,+Madhya+Pradesh,+452010"
+                href="https://www.google.com/maps?q=649-650, above Lenskart Showroom, Sector MR-4, Sector A, Mahalaxmi Nagar, Indore, Madhya Pradesh 452010"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                649-650, Sector A, Mahalaxmi Nagar, Indore, Madhya Pradesh,
-                452010
+               649-650, above Lenskart Showroom, Sector MR-4, Sector A, Mahalaxmi Nagar, Indore, Madhya Pradesh 452010
               </a>
             </li>
             <li className="hover:text-green-500">
