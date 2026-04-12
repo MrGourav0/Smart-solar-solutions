@@ -69,6 +69,7 @@ function Services() {
     { id: "residential", label: " Residential Cleaning", },
     { id: "commercial", label: " Commercial Cleaning", },
     // { id: "other", label: " Other Services",  },
+  // only 
   ];
 
   const otherServices = [
