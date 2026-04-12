@@ -4,7 +4,7 @@ const services = [
   {
     icon: "🏠",
     title: "Rooftop Solutions",
-    bg: "linear-gradient(135deg, #166534, #16a34a)",
+    bg: "linear-gradient(135deg,#166534,#4ade80)",
     items: [
       "Free solar consultation for residential & commercial connections",
       "Free site visit — roof height, direction, elevation, rooftop layout & design by solar experts",
@@ -17,7 +17,7 @@ const services = [
   {
     icon: "🏭",
     title: "Industrial Solar Solutions",
-     bg: "linear-gradient(135deg, #166534, #16a34a)",
+     bg: "linear-gradient(135deg,#166534,#4ade80)",
     items: [
       "Complete consultation for factories, warehouses & industries",
       "Detailed load analysis & high-capacity system planning",
@@ -29,7 +29,7 @@ const services = [
   {
     icon: "🌱",
     title: "Ground Mounted Solutions",
-    bg: "linear-gradient(135deg, #166534, #16a34a)",
+    bg: "linear-gradient(135deg,#166534,#4ade80)",
     items: [
       "Site assessment for land suitability",
       "Ideal for large-scale projects, farms & commercial use",
@@ -41,7 +41,7 @@ const services = [
   {
     icon: "🧹",
     title: "Solar Cleaning",
-     bg: "linear-gradient(135deg, #166534, #16a34a)",
+     bg: "linear-gradient(135deg,#166534,#4ade80)",
     items: [
       "Professional cleaning using safe & effective methods",
       "Removes dust, bird droppings",
@@ -53,7 +53,7 @@ const services = [
   {
     icon: "🔧",
     title: "Repair & Maintenance",
-     bg: "linear-gradient(135deg, #166534, #16a34a)",
+     bg: "linear-gradient(135deg,#166534,#4ade80)",
     items: [
       "Complete system health check & fault diagnosis",
       "Repair of panels, inverter & electrical components",
@@ -64,7 +64,7 @@ const services = [
   {
     icon: "📊",
     title: "Generation Reports",
-    bg: "linear-gradient(135deg, #166534, #16a34a)",
+    bg: "linear-gradient(135deg,#166534,#4ade80)",
     items: [
       "Detailed tracking of daily, monthly & yearly generation",
       "Comparison of expected vs actual output",
@@ -75,7 +75,7 @@ const services = [
   {
     icon: "🛡️",
     title: "Solar Insurance",
-    bg: "linear-gradient(135deg, #166534, #16a34a)",
+    bg: "linear-gradient(135deg,#166534,#4ade80)",
     items: [
       "Coverage against natural disasters, theft & damage",
    
@@ -87,7 +87,7 @@ const services = [
   {
     icon: "💰",
     title: "Project Finance",
-     bg: "linear-gradient(135deg, #166534, #16a34a)",
+     bg: "linear-gradient(135deg,#166534,#4ade80)",
     items: [
       "Easy loan & EMI options for solar installation",
       "Tie-ups with banks Nationalised & NBFCs for quick approval",
@@ -176,7 +176,7 @@ function About() {
               key={i}
               className="bg-gradient-to-br from-gray-50 to-green-50 border border-green-100 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-default"
             >
-              <h3 className="text-3xl font-extrabold bg-gradient-to-r from-green-800 to-green-400 bg-clip-text text-transparent">{s.value}</h3>
+              <h3 className="text-2xl font-extrabold bg-gradient-to-r from-green-800 to-green-400 bg-clip-text text-transparent">{s.value}</h3>
               <p className="text-gray-500 mt-2 text-xs font-medium">{s.label}</p>
             </div>
           ))}
