@@ -60,7 +60,7 @@ const Navbar = () => {
         {/* Contact Button */}
        <Link
 to="/contact"
-className="bg-green-500 hover:bg-green-600 text-white text-sm md:text-sm px-5 py-2 rounded-full transition"
+className="bg-gradient-to-r from-green-800 to-green-400 hover:bg-gradient-to-r from-green-800 to-green-600 text-white text-sm md:text-sm px-5 py-2 rounded-full transition"
 >
 Contact Us
 </Link>

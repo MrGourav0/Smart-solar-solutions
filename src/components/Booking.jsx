@@ -60,7 +60,7 @@ function Booking() {
               key={index}
               className={`p-8 rounded-xl shadow-md transition hover:shadow-xl ${
                 plan.highlight
-                  ? "bg-green-500 text-white"
+                  ? "bg-gradient-to-r from-green-800 to-green-400 text-white"
                   : "bg-white text-gray-600"
               }`}
             >
@@ -78,7 +78,7 @@ function Booking() {
                 className={`w-full py-3 rounded-lg font-semibold transition ${
                   plan.highlight
                     ? "bg-white text-green-600 hover:bg-gray-200"
-                    : "bg-green-500 text-white hover:bg-green-600"
+                    : "bg-gradient-to-r from-green-800 to-green-400 text-white hover:bg-green-600"
                 }`}
               >
                 Book Now

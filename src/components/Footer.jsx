@@ -68,7 +68,7 @@ function Footer() {
                 href="https://wa.me/6268314390"
                 target="_blank"
                 rel="noreferrer"
-                className="flex-1 flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 px-4 py-2 rounded-md transition"
+                className="flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-green-800 to-green-400 hover:bg-green-600 px-4 py-2 rounded-md transition"
               >
                 <i className="ri-whatsapp-line text-xl"></i>
                 WhatsApp
@@ -76,7 +76,7 @@ function Footer() {
 
               <a
                 href="tel:6268314390"
-                className="flex-1 flex items-center justify-center gap-2 bg-blue-800 hover:bg-blue-600 px-4 py-2 rounded-md transition"
+                className="flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-blue-800 to-blue-400 hover:bg-blue-600 px-4 py-2 rounded-md transition"
               >
                 <i className="ri-phone-line text-xl"></i>
                 Call
@@ -86,7 +86,7 @@ function Footer() {
                 href="https://www.instagram.com/smart_solar_solutions__?igsh=eWZmMmN5dHNieWls"
                 target="_blank"
                 rel="noreferrer"
-                className="flex-1 flex items-center justify-center gap-2 bg-pink-600 hover:bg-pink-700 px-4 py-2 rounded-md transition"
+                className="flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-rose-800 to-rose-400 hover:bg-pink-700 px-4 py-2 rounded-md transition"
               >
                 <i className="ri-instagram-line text-xl"></i>
                 Instagram

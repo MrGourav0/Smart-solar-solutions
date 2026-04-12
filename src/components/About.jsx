@@ -176,7 +176,7 @@ function About() {
               key={i}
               className="bg-gradient-to-br from-gray-50 to-green-50 border border-green-100 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-default"
             >
-              <h3 className="text-3xl font-extrabold text-green-600">{s.value}</h3>
+              <h3 className="text-3xl font-extrabold bg-gradient-to-r from-green-800 to-green-400 bg-clip-text text-transparent">{s.value}</h3>
               <p className="text-gray-500 mt-2 text-xs font-medium">{s.label}</p>
             </div>
           ))}
@@ -206,7 +206,7 @@ function About() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+        <div className="  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
           {services.map((service, i) => (
             <ServiceCard key={i} service={service} />
           ))}

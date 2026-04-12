@@ -109,7 +109,7 @@ function Services() {
               onClick={() => setActiveTab(tab.id)}
               className={`px-8 py-4 rounded-2xl font-semibold transition-all duration-300 flex items-center gap-3 ${
                 activeTab === tab.id
-                  ? "bg-green-500 text-white shadow-xl shadow-green-500/25 scale-105"
+                  ? "bg-gradient-to-r from-green-800 to-green-400 text-white shadow-xl shadow-green-500/25 scale-105"
                   : "bg-white/60 backdrop-blur-sm border border-gray-200 hover:border-green-300 hover:shadow-lg hover:-translate-y-1 text-gray-700"
               }`}
             >
@@ -173,7 +173,7 @@ function Services() {
                     ))}
                   </div>
 
-                  <button className="w-full bg-green-500 text-white py-4 px-6 rounded-2xl font-semibold hover:from-green-600 hover:to-green-700 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                  <button className="w-full bg-gradient-to-r from-green-800 to-green-400 text-white py-4 px-6 rounded-2xl font-semibold hover:from-green-600 hover:to-green-700 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                     Get Now
                   </button>
                 </div>
