@@ -10,56 +10,56 @@ function Services() {
         title: "3KW / 4KW Residential",
         subtitle: "Perfect for homes",
         plans: [
-          { label: "1 Time Process", price: 599 },
-          { label: "6 Months Subscription", price: 3999 },
-          { label: "1 Year Subscription", price: 7499 },
+          { label: "1 Time Process", oldPrice: 599, price: 499 },
+          { label: "6 Months Subscription", oldPrice: 3499, price: 2999 },
+          { label: "1 Year Subscription", oldPrice: 7986, price: 7999 },
         ],
       },
       {
         title: "5KW / 6KW Residential",
         subtitle: "Medium households",
         plans: [
-          { label: "1 Time Process", price: 649 },
-          { label: "6 Months Subscription", price: 4299 },
-          { label: "1 Year Subscription", price: 7999 },
+          { label: "1 Time Process", oldPrice: 649, price: 549 },
+          { label: "6 Months Subscription", oldPrice: 3584, price: 3099 },
+          { label: "1 Year Subscription", oldPrice: 8686, price: 7199 },
         ],
       },
       {
-        title: "7KW+ Large Residential",
+        title: "7KW / 10KW Residential",
         subtitle: "Big homes & villas",
         plans: [
-          { label: "1 Time Process", price: 699 },
-          { label: "6 Months Subscription", price: 4599 },
-          { label: "1 Year Subscription", price: 8499 },
+          { label: "1 Time Process", oldPrice: 699, price: 599 },
+          { label: "6 Months Subscription", oldPrice: 4193, price: 3199 },
+          { label: "1 Year Subscription", oldPrice: 9386, price: 7399 },
         ],
       },
     ],
     commercial: [
       {
-        title: "10-20KW Commercial",
+        title: "10-20KW  Commercial",
         subtitle: "Small businesses",
         plans: [
-          { label: "1 Time Process", price: 599 },
-          { label: "6 Months Subscription", price: 3999 },
-          { label: "1 Year Subscription", price: 7499 },
+          { label: "1 Time Process", oldPrice: 799, price: 699 },
+          { label: "6 Months Subscription", oldPrice: 4993, price: 3999 },
+          { label: "1 Year Subscription", oldPrice: 9786, price: 7999 },
         ],
       },
       {
         title: "20-30KW Commercial",
         subtitle: "Medium factories",
         plans: [
-          { label: "1 Time Process", price: 649 },
-          { label: "6 Months Subscription", price: 4299 },
-          { label: "1 Year Subscription", price: 7999 },
+          { label: "1 Time Process", oldPrice: 899, price: 799 },
+          { label: "6 Months Subscription", oldPrice: 5593, price: 4299 },
+          { label: "1 Year Subscription", oldPrice: 11166, price: 8499 },
         ],
       },
       {
-        title: "30KW+ Industrial",
+        title: "30 - 50KW Commercial",
         subtitle: "Large plants",
         plans: [
-          { label: "1 Time Process", price: 699 },
-          { label: "6 Months Subscription", price: 4599 },
-          { label: "1 Year Subscription", price: 8499 },
+          { label: "1 Time Process", oldPrice: 999, price: 899 },
+          { label: "6 Months Subscription", oldPrice: 6293, price: 4599 },
+          { label: "1 Year Subscription", oldPrice: 12566, price: 8999 },
         ],
       },
     ],
@@ -153,7 +153,7 @@ function Services() {
                   key={index}
                   className="group bg-gradient-to-br from-slate-50 to-blue-50 p-8 rounded-3xl shadow-lg hover:shadow-2xl border border-green-100 hover:border-green-300 transition-all duration-500 hover:-translate-y-3"
                 >
-                  <div className="text-3xl font-bold text-green-600 mb-4">
+                  <div className="text-2xl font-bold text-green-600 mb-4">
                     {item.title}
                   </div>
                   <p className="text-gray-500 italic mb-6">{item.subtitle}</p>
@@ -167,15 +167,20 @@ function Services() {
                         <span className="font-medium text-gray-700">
                           {plan.label}
                         </span>
-                        <span className="text-2xl font-bold text-green-600">
-                          ₹{plan.price}
+                        <span className="flex items-center gap-2">
+                          <span className="text-sm text-gray-400 line-through">
+                            ₹{plan.oldPrice}
+                          </span>
+                          <span className="text-2xl font-bold text-green-600">
+                            ₹{plan.price}
+                          </span>
                         </span>
                       </div>
                     ))}
                   </div>
 
                   <button className="w-full bg-gradient-to-r from-green-800 to-green-400 text-white py-4 px-6 rounded-2xl font-semibold hover:from-green-600 hover:to-green-700 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                    Get Now
+                    Book Now 
                   </button>
                 </div>
               ))}
