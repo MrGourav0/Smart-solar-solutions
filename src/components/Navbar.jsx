@@ -31,7 +31,7 @@ const Navbar = () => {
        {/* Logo */}
 <a href="#home" className="flex items-center gap-2 mb-0">
   <img
-    src="/LO.png"
+    src="/SK.png"
     alt="Smart Solar Solutions"
     className="h-14 md:h-15 w-auto"
   />
