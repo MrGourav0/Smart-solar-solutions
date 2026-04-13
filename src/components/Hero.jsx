@@ -16,7 +16,7 @@ function Hero() {
       </video>
 
       {/* 🌑 Overlay */}
-      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute inset-0 bg-black/30"></div>
 
       {/* 📄 Content */}
       <div className="relative z-10 text-white text-center px-4 py-8">

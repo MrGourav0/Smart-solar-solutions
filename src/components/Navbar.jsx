@@ -22,8 +22,8 @@ const Navbar = () => {
     isOpen
       ? "bg-black/40 backdrop-blur-sm w-full left-0 top-0 py-3 rounded-none"
       : scrolled
-      ? "bg-black/40 backdrop-blur-sm shadow-lg w-[92%] left-1/2 -translate-x-1/2 top-1 py-0 rounded-full"
-      : "bg-transparent w-full left-0 top-0 py-0 rounded-none"
+      ? "bg-black/40 backdrop-blur-sm shadow-lg w-[92%] left-1/2 -translate-x-1/2 top-1 px-3 py-0 rounded-full"
+      : "bg-transparent w-full left-0 top-0 py-1 rounded-none"
   }`}
 >
      <div className="max-w-7xl mx-auto flex items-center justify-between px-0 py-0 md:px-0 md:py-0 transition-all duration-500">
