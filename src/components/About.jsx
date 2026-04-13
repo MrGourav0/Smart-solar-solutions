@@ -1,3 +1,5 @@
+import { useEffect, useRef, useState } from "react";
+
 const stats = [
   { value: "500+", label: "Panels Cleaned" },
   { value: "1+", label: "Years Experience" },
@@ -5,6 +7,44 @@ const stats = [
 ];
 
 function About() {
+  const statsRef = useRef(null);
+  const [animatedValues, setAnimatedValues] = useState(stats.map(() => 0));
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  useEffect(() => {
+    const element = statsRef.current;
+    if (!element || hasAnimated) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+
+        setHasAnimated(true);
+        const targets = stats.map((stat) => parseInt(stat.value, 10) || 0);
+        const duration = 1400;
+        const startTime = performance.now();
+
+        const animate = (now) => {
+          const progress = Math.min((now - startTime) / duration, 1);
+          const nextValues = targets.map((target) => Math.floor(target * progress));
+          setAnimatedValues(nextValues);
+
+          if (progress < 1) {
+            requestAnimationFrame(animate);
+          }
+        };
+
+        requestAnimationFrame(animate);
+        observer.disconnect();
+      },
+      { threshold: 0.4 }
+    );
+
+    observer.observe(element);
+
+    return () => observer.disconnect();
+  }, [hasAnimated]);
+
   return (
     <div id="about" className="bg-white">
 
@@ -32,13 +72,15 @@ function About() {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-3 gap-4 text-center">
+        <div ref={statsRef} className="grid grid-cols-3 gap-4 text-center">
           {stats.map((s, i) => (
             <div
               key={i}
               className="bg-gradient-to-br from-gray-50 to-green-50 border border-green-100 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-default"
             >
-              <h3 className="text-2xl font-extrabold bg-gradient-to-r from-green-800 to-green-400 bg-clip-text text-transparent">{s.value}</h3>
+              <h3 className="text-xl font-extrabold bg-gradient-to-r from-green-800 to-green-400 bg-clip-text text-transparent">
+                {`${animatedValues[i]}${s.value.replace(/[0-9]/g, "")}`}
+              </h3>
               <p className="text-gray-500 mt-2 text-xs font-medium">{s.label}</p>
             </div>
           ))}
